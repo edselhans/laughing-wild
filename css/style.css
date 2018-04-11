@@ -349,6 +349,11 @@ header {
     margin: 0;
     font-size: 1.25rem; }
 
+  .artists__role {
+    display: inline-block;
+    font-size: 1.25rem;
+    color: #000; }
+
   .artists__dots,
   .crew__dots,
   .digital__dots {
@@ -402,6 +407,12 @@ header {
     margin: 0;
     font-size: 1rem; }
 
+  .crew__role,
+  .digital__role {
+    display: inline-block;
+    font-size: 1rem;
+    color: #000; }
+
   /****************
        FOOTER
   ****************/
@@ -436,14 +447,3 @@ header {
 
   .digital__title {
     font-size: 1.25rem;
-    border-bottom: solid black 2px;
-    margin: 0 auto 1rem;
-    width: 25rem; }
-
-  .digital__dude {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    font-size: 1rem; } }
-
-/*# sourceMappingURL=style.css.map */
