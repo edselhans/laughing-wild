@@ -447,3 +447,14 @@ header {
 
   .digital__title {
     font-size: 1.25rem;
+    border-bottom: solid black 2px;
+    margin: 0 auto 1rem;
+    width: 25rem; }
+
+  .digital__dude {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */
