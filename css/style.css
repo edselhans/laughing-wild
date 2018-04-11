@@ -12,7 +12,7 @@ body {
 .checkers {
   width: 100%;
   height: 1.875rem;
-  background: url(../img/checkers.svg) left center repeat-x;
+  background: url("../img/checkers.svg") left center repeat-x;
   opacity: .9; }
 
 /****************
@@ -28,7 +28,7 @@ header {
   position: relative;
   font-family: "Chivo", sans-serif;
   color: rgba(255, 255, 255, 0.9);
-  background: url(../img/header-img.jpg) 50% 50% no-repeat; }
+  background: url("../img/header-img.jpg") 50% 50% no-repeat; }
 
 .header__surtitle {
   font-size: 1.25rem;
