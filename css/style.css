@@ -62,6 +62,11 @@ header {
 .header__subtitle--by {
   margin-top: 1rem; }
 
+.header__subtitle--small {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: top; }
+
 .header__date-wrapper {
   text-align: right;
   padding: 1rem 0 7rem 1.75rem; }
@@ -239,6 +244,9 @@ header {
   font-size: 1rem;
   color: #D37C41; }
 
+/****************
+     Desktop
+****************/
 @media screen and (min-width: 720px) {
   .checkers {
     width: 100%;
@@ -291,7 +299,16 @@ header {
     font-size: 2.5rem;
     margin: 0;
     padding: 0;
-    padding-right: 1.5rem; }
+    padding-right: 1.5rem;
+    line-height: 2.25rem; }
+
+  .header__subtitle--by {
+    margin-top: .5rem; }
+
+  .header__subtitle--small {
+    font-size: 1.5rem;
+    display: inline-block;
+    vertical-align: top; }
 
   .header__date-wrapper {
     grid-column-start: 2;
@@ -394,3 +411,39 @@ header {
   .video {
     display: block;
     margin: 2rem auto; }
+
+  .donate {
+    width: 25rem;
+    max-width: 25rem;
+    height: 5rem;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background: #D37C41;
+    color: #fff;
+    transition: .2s;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 5rem; }
+
+  .donate:hover {
+    background: #fff;
+    color: #FFD16A; }
+
+  .digital {
+    text-align: center;
+    margin: 4rem auto 2rem; }
+
+  .digital__title {
+    font-size: 1.25rem;
+    border-bottom: solid black 2px;
+    margin: 0 auto 1rem;
+    width: 25rem; }
+
+  .digital__dude {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */
