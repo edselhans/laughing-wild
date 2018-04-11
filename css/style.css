@@ -56,11 +56,15 @@ header {
   font-size: 1.75rem;
   margin: 0;
   padding: 0;
-  padding-right: 1rem; }
+  padding-right: 1rem;
+  line-height: 1.5rem; }
+
+.header__subtitle--by {
+  margin-top: 1rem; }
 
 .header__date-wrapper {
   text-align: right;
-  padding: 1rem 0 3rem 2.75rem; }
+  padding: 1rem 0 7rem 1.75rem; }
 
 .header__date {
   font-size: 1rem;
@@ -98,12 +102,26 @@ header {
   display: block;
   padding: 0;
   margin: 0;
+  margin-bottom: .5rem;
   font-size: 1rem; }
+
+.artists__role {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #D37C41; }
 
 .artists__dots,
 .crew__dots,
 .digital__dots {
   display: none; }
+
+.artists__mobile-dots,
+.crew__mobile-dots,
+.digital__mobile-dots {
+  display: inline-block;
+  margin-bottom: .5rem; }
 
 /****************
      Press
@@ -143,7 +161,15 @@ header {
   display: block;
   padding: 0;
   margin: 0;
+  margin-bottom: .5rem;
   font-size: 1rem; }
+
+.crew__role {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #D37C41; }
 
 /****************
      FOOTER
@@ -203,7 +229,15 @@ header {
   display: block;
   padding: 0;
   margin: 0;
+  margin-bottom: .5rem;
   font-size: 1rem; }
+
+.digital__role {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #D37C41; }
 
 @media screen and (min-width: 720px) {
   .checkers {
@@ -360,39 +394,3 @@ header {
   .video {
     display: block;
     margin: 2rem auto; }
-
-  .donate {
-    width: 25rem;
-    max-width: 25rem;
-    height: 5rem;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    background: #D37C41;
-    color: #fff;
-    transition: .2s;
-    text-decoration: none;
-    font-size: 1.25rem;
-    line-height: 5rem; }
-
-  .donate:hover {
-    background: #fff;
-    color: #FFD16A; }
-
-  .digital {
-    text-align: center;
-    margin: 4rem auto 2rem; }
-
-  .digital__title {
-    font-size: 1.25rem;
-    border-bottom: solid black 2px;
-    margin: 0 auto 1rem;
-    width: 25rem; }
-
-  .digital__dude {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    font-size: 1rem; } }
-
-/*# sourceMappingURL=style.css.map */
