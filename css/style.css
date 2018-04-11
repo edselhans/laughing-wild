@@ -1,0 +1,396 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+/****************
+    VARIABLES
+****************/
+/****************
+      MAIN
+****************/
+body {
+  font-family: "Comfortaa", sans-serif;
+  background-color: #FFD16A; }
+
+.checkers {
+  width: 100%;
+  height: 1.875rem;
+  background: url(../img/checkers.svg) left center repeat-x;
+  opacity: .9; }
+
+/****************
+     HEADER
+****************/
+header {
+  width: 100%;
+  height: calc(100vh - 30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  font-family: "Chivo", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  background: url(../img/header-img.jpg) 50% 50% no-repeat; }
+
+.header__surtitle {
+  font-size: 1.25rem;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  margin: 0;
+  padding: 0;
+  padding-left: .5rem; }
+
+.header__title-wrapper {
+  text-align: right;
+  grid-column-start: 3;
+  grid-row-start: 3; }
+
+.header__title {
+  font-size: 3.5rem;
+  line-height: 2.75rem;
+  margin: 0;
+  padding: 0; }
+
+.header__title--wild {
+  padding-right: 1.25rem; }
+
+.header__subtitle {
+  font-size: 1.75rem;
+  margin: 0;
+  padding: 0;
+  padding-right: 1rem; }
+
+.header__date-wrapper {
+  text-align: right;
+  padding: 1rem 0 3rem 2.75rem; }
+
+.header__date {
+  font-size: 1rem;
+  line-height: 1rem;
+  text-align: right;
+  margin: 0;
+  padding: 0; }
+
+.header__date--month,
+.header__date--day {
+  display: inline-block; }
+
+.header__coming-soon {
+  position: absolute;
+  bottom: 1rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-family: "Comfortaa", sans-serif; }
+
+/****************
+     ARTISTS
+****************/
+.artists {
+  text-align: center;
+  margin: 2rem auto 4rem; }
+
+.artists__title {
+  font-size: 1.5rem;
+  border-bottom: solid black 2px;
+  margin: 0 auto 1rem;
+  width: 90%; }
+
+.artists__artist {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem; }
+
+.artists__dots,
+.crew__dots,
+.digital__dots {
+  display: none; }
+
+/****************
+     Press
+****************/
+.press {
+  text-align: center; }
+
+.press__title {
+  font-size: 1.25rem;
+  border-bottom: solid black 2px;
+  margin: 1rem auto 1rem;
+  width: 90%; }
+
+.press__link {
+  text-decoration: none;
+  color: #D37C41;
+  transition: .2s color;
+  margin: 0 .5rem; }
+
+.press__link:hover {
+  color: #fff; }
+
+/****************
+     ARTISTS
+****************/
+.crew {
+  text-align: center;
+  margin: 4rem auto 2rem; }
+
+.crew__title {
+  font-size: 1.25rem;
+  border-bottom: solid black 2px;
+  margin: 0 auto 1rem;
+  width: 90%; }
+
+.crew__crew {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem; }
+
+/****************
+     FOOTER
+****************/
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.video-mobile {
+  display: block;
+  margin: 2rem auto; }
+
+.video {
+  display: none; }
+
+.donate {
+  width: 90%;
+  max-width: 20rem;
+  height: 2.5rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  background: #D37C41;
+  color: #fff;
+  transition: .2s;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 2.5rem; }
+
+.donate:focus {
+  background: #fff;
+  color: #FFD16A; }
+
+.digital {
+  text-align: center;
+  margin: 4rem auto 2rem; }
+
+.digital__title {
+  font-size: 1rem;
+  border-bottom: solid black 2px;
+  margin: 0 auto 1rem;
+  width: 90%; }
+
+.digital__dude {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem; }
+
+@media screen and (min-width: 720px) {
+  .checkers {
+    width: 100%;
+    height: 3.75rem;
+    background: url(../img/checkers.svg) left center repeat-x;
+    opacity: .9; }
+
+  /****************
+       HEADER
+  ****************/
+  header {
+    width: 100%;
+    height: calc(100vh - 60px);
+    min-height: 600px;
+    max-height: 1080px;
+    align-items: initial;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto 16rem 26rem auto;
+    grid-template-rows: 50% 1.25rem 13.5rem 5rem;
+    align-content: end;
+    position: relative;
+    font-family: "Chivo", sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    background: url(../img/header-img.jpg) 50% 50% no-repeat; }
+
+  .header__surtitle {
+    font-size: 1.25rem;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    margin: 0;
+    padding: 0;
+    padding-left: .5rem; }
+
+  .header__title-wrapper {
+    text-align: right;
+    grid-column-start: 3;
+    grid-row-start: 3; }
+
+  .header__title {
+    font-size: 5rem;
+    line-height: 4rem;
+    margin: 0;
+    padding: 0; }
+
+  .header__title--wild {
+    padding-right: 1.75rem; }
+
+  .header__subtitle {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    padding-right: 1.5rem; }
+
+  .header__date-wrapper {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    padding-top: 2px; }
+
+  .header__date {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: right;
+    margin: 0;
+    padding: 0; }
+
+  .header__coming-soon {
+    position: absolute;
+    bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif; }
+
+  /****************
+       ARTISTS
+  ****************/
+  .artists {
+    text-align: center;
+    margin: 2rem auto 4rem; }
+
+  .artists__title {
+    font-size: 2rem;
+    border-bottom: solid black 2px;
+    margin: 0 auto 1rem;
+    width: 25rem; }
+
+  .artists__artist {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem; }
+
+  .artists__dots,
+  .crew__dots,
+  .digital__dots {
+    display: inline;
+    font-family: "Chivo", sans-serif;
+    font-size: 1rem;
+    letter-spacing: .25rem; }
+
+  .artists__mobile-dots,
+  .crew__mobile-dots,
+  .digital__mobile-dots {
+    display: none; }
+
+  /****************
+       Press
+  ****************/
+  .press {
+    text-align: center; }
+
+  .press__title {
+    font-size: 1.5rem;
+    border-bottom: solid black 2px;
+    margin: 1rem auto 1rem;
+    width: 25rem; }
+
+  .press__link {
+    text-decoration: none;
+    color: #D37C41;
+    transition: .2s color;
+    margin: 0 .5rem; }
+
+  .press__link:hover {
+    color: #fff; }
+
+  /****************
+       ARTISTS
+  ****************/
+  .crew {
+    text-align: center;
+    margin: 4rem auto 2rem; }
+
+  .crew__title {
+    font-size: 1.5rem;
+    border-bottom: solid black 2px;
+    margin: 0 auto 1rem;
+    width: 25rem; }
+
+  .crew__crew {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem; }
+
+  /****************
+       FOOTER
+  ****************/
+  .video-container {
+    display: none; }
+
+  .video {
+    display: block;
+    margin: 2rem auto; }
+
+  .donate {
+    width: 25rem;
+    max-width: 25rem;
+    height: 5rem;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background: #D37C41;
+    color: #fff;
+    transition: .2s;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 5rem; }
+
+  .donate:hover {
+    background: #fff;
+    color: #FFD16A; }
+
+  .digital {
+    text-align: center;
+    margin: 4rem auto 2rem; }
+
+  .digital__title {
+    font-size: 1.25rem;
+    border-bottom: solid black 2px;
+    margin: 0 auto 1rem;
+    width: 25rem; }
+
+  .digital__dude {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */
