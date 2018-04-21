@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'laughing-wild';
+    src: url('https://cdn.rawgit.com/edselhans/laughing-wild/blob/master/webfontkit/laughing_wild-webfont.woff2') format('woff2'),
+         url('https://cdn.rawgit.com/edselhans/laughing-wild/blob/master/webfontkit/laughing_wild-webfont.woff') format('woff'),
+         url('https://cdn.rawgit.com/edselhans/laughing-wild/blob/master/webfontkit/laughing_wild-webfont.tff') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
