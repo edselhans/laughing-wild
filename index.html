@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" name="viewport" content="initial-scale=1">
   <title>Laughing Wild On Stage</title>
-  <link href="https://cdn.rawgit.com/edselhans/laughing-wild/blob/master/css/specimen_stylesheet.css" rel="stylesheet" defer> 
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet" defer> 
+  <!-- <link href="https://cdn.rawgit.com/edselhans/laughing-wild/blob/master/css/specimen_stylesheet.css" rel="stylesheet" type="text/css" charset="utf-8" defer> -->
+  <link href="font/stylesheet.css" rel="stylesheet" type="text/css" charset="utf-8" defer>
+  <link href="https://fonts.googleapis.com/css?family=Chivo:900|Comfortaa:700" rel="stylesheet" defer> 
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
@@ -22,33 +23,33 @@
       <h2 class="header__date header__date--month">JUNE</h2>
       <h2 class="header__date header__date--day">7TH, 8TH & 9TH</h2>
     </div>
-    <span class="header__coming-soon">More information coming soon!</span>
+    <a class="header__tickets" href="https://m.ovationtix.com/pr/991895">GET TICKETS</a>
   </header>
   <div class="checkers"></div>
-  <div class="artists">
-    <h2 class="artists__title">ABOUT THE ARTISTS</h2>
-    <div class="artists__wrapper">
-      <h2 class="artists__artist">Christopher Durang</h2>
-      <span class="artists__dots">.........................................</span>
-      <h2 class="artists__role">Playwright</h2>
+  <div id="artists" class="artists">
+    <h1 class="artists__title">ABOUT THE ARTISTS</h1>
+    <div id="durang" class="artists__wrapper">
+        <h2 class="artists__artist">Christopher Durang</h2>
+        <span class="artists__dots">.........................................</span>
+        <h2 class="artists__role">Playwright</h2>
     </div>
     <span class="artists__mobile-dots">........</span>
-    <div class="artists__wrapper">
-      <h2 class="artists__artist">Lovell Holder</h2>
-      <span class="artists__dots">....................................................</span>
-      <h2 class="artists__role">Director</h2>
+    <div id="lovell" class="artists__wrapper">
+        <h2 class="artists__artist">Lovell Holder</h2>
+        <span class="artists__dots">.....................................................</span>
+        <h2 class="artists__role">Director</h2>
     </div>
     <span class="artists__mobile-dots">........</span>
-    <div class="artists__wrapper">
-      <h2 class="artists__artist">Adam Ziv</h2>
-      <span class="artists__dots">..............................</span>
-      <h2 class="artists__role">The Man & Executive Producer</h2>
+    <div id="adam" class="artists__wrapper">
+        <h2 class="artists__artist">Adam Ziv</h2>
+        <span class="artists__dots">.................................</span>
+        <h2 class="artists__role">Actor & Executive Producer</h2>
     </div>
     <span class="artists__mobile-dots">........</span>
-    <div class="artists__wrapper">
-      <h2 class="artists__artist">Dominique Salerno</h2>
-      <span class="artists__dots">.........................................</span>
-      <h2 class="artists__role">The Woman</h2>
+    <div id="dominique" class="artists__wrapper">
+        <h2 class="artists__artist">Dominique Salerno</h2>
+        <span class="artists__dots">.................................................</span>
+        <h2 class="artists__role">Actor</h2>
     </div>
   </div>
   <div class="press">
@@ -86,24 +87,52 @@
   <div class="video-container">
     <iframe class="video-mobile" width="560" height="315" src="https://www.youtube.com/embed/0yoBAZXSN98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
-  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/0yoBAZXSN98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  <a class="donate" href="#">DONATE TO SUPPORT THE ARTS</a>
+  <!-- <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/0yoBAZXSN98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+  <a class="donate" href="https://www.gofundme.com/laughingwildonstage/donate">MAKE A DONATION</a>
   <div class="digital">
     <h2 class="digital__title">ADDITIONAL THANKS</h2>
     <div class="digital__wrapper">
       <h2 class="digital__dude">Taylor Hartley</h2>
-      <span class="digital__dots">...............................................</span>
+      <span class="digital__dots">..................................................</span>
       <h2 class="digital__role">Graphic Design</h2>
     </div>
     <span class="digital__mobile-dots">........</span>
     <div class="digital__wrapper">
       <h2 class="digital__dude">Edward Ulick</h2>
-      <span class="digital__dots">..................................</span>
+      <span class="digital__dots">...................................</span>
       <h2 class="digital__role">Web {Design} + &#60;Development&#62;</h2>
     </div>
   </div>
   <div class="checkers"></div>
-
+  <div id="popup" class="popup hidden invisible">å
+    <div class="popup__wrapper">
+      <div class="popup__title-wrapper">
+        <h1 id="artist-name" class="popup__artist">Adam Ziv</h1>
+        <h1 id="artist-role" class="popup__role">Actor & Executive Producer</h1>
+      </div>
+      <div id="headshot-container" class="popup__img-container">
+        <img id="artist-img" class="popup__img" src="img/headshot-adam.jpg">
+      </div>
+      <p id="artist-description" class="popup__description">Adam Ziv is an actor, dancer and musician from New York City. He
+        graduated from Princeton University, where he obtained a Certificate in Theater from the Lewis Center
+        for the Arts, served as Artistic Director for diSiac dance company, and studied choreography with Susan
+        Marshall. He has studied acting at the Royal Academy of Dramatic Art in London, the American Globe
+        Theater Conservatory, and the Stella Adler Studio in NYC. Favorite theater credits include The Oresteia
+        (Orestes, Agamemnon), Antigone (Creon), Twelfth Night (Orsino), Measure for Measure (Lucio), Romeo
+        and Juliet (Tylbalt), A Doll’s House (Helmer, Krogstad), Hedda Gabler (Lovborg), The Letter (Crosbie), The
+        Zoo Story (Jerry) and Barefoot In the Park (Velasco) directed by Lovell Holder. He appeared in the 2013
+        NYC Fringe Festival in Becca Foresman’s HALF: A Divorce Farce, and danced Off-Broadway in the award-
+        winning 8 Million Protagonists. In LA, he appeared in McCoy Rigby’s production of West Side Story
+        (Diesel) at the La Mirada Theater for the Performing Arts last season, and has also performed with Neo
+        Ensemble Theater in Shakespeare In Hollywood (Cagney). He has danced for C.Eule Dance, RhetOracle
+        Dance Company, Epiphany Dance Company, For Dance Company, Sean Greene&#39;s Shieldwall Dance
+        Company and Chad Michael Hall’s Multiplex Dance. As a choreographer, he has shown work in LA at the
+        West Hollywood Dance Festival, El Portal Theater, Rockwell Table and Stage, and Los Globos, as well as
+        in venues in NYC and San Diego. When he is not acting or dancing, Adam is a classical pianist and
+        teacher.</p>
+    </div>
+    <button id="x-button" class="popup__x-button">&#x2715;</button>
+  </div>
   <!-- <script type="text/javascript">
     function downloadJSAtOnload() {
     var element = document.createElement("script");
