@@ -29,7 +29,7 @@ let artistInfo = {
   lovell: {
     name: "Lovell Holder",
     role: "Director",
-    headshot: "img/headshot-lovell.jpg",
+    headshot: "img/headshot-lovell.jpg ",
     description: "Lovell Holder graduated summa cum laude and Phi Beta Kappa from Princeton University.  Hethen went on to receive his MFA in Acting from Brown University/Trinity Repertory Company.  Uponmoving to Los Angeles, Holder first worked as a development assistant for writer/producer StacyRukeyser (the Emmy-nominated UnREAL) and producer Clark Peterson (the Oscar-winning Monster,Rampart).  Not long after, he began writing his own work, and his first play, Juliet in Pasadena, wasshortlisted as a semi-finalist for the National Playwrights Conference at the Eugene O’Neill TheaterCenter. Holder served as the lead producer of Some Freaks, the debut feature film of Ian MacAllister-McDonald (a Sundance Lab Finalist), which stars Thomas Mann (Me and Earl and the Dying Girl), LilyMae Harrington, and Tony Award nominee Marin Ireland (Sneaky Pete).  Executive produced by NeilLaBute, the outsider romance has won over a dozen festival awards, and the Hollywood Reporter namedit “one of the strongest films of its kind in ages.” Soon after completing production on Some Freaks,Holder directed his first feature film, Loserville, which he also co-wrote and produced alongside Grey’sAnatomy star and Tony Award winner Sara Ramirez.  The ensemble comedy features Darby Stanchfield(Scandal), Matt McGorry (How to Get Away with Murder), Jamie-Lynn Sigler (The Sopranos), andJonathan Lipnicki (Jerry Maguire).  Most recently, Holder teamed up with Oscar-winning director DamienChazelle to produce the dark comedy Surrogate, a short film by Olivia Hamilton."
   },
   adam: {
