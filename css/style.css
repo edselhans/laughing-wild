@@ -5,6 +5,10 @@
 /****************
       MAIN
 ****************/
+html,
+body {
+  height: 100%; }
+
 body {
   font-family: "Comfortaa", sans-serif;
   background-color: #FFD16A; }
@@ -36,7 +40,8 @@ header {
   grid-row-start: 2;
   margin: 0;
   padding: 0;
-  padding-left: .5rem; }
+  padding-left: .5rem;
+  opacity: .9; }
 
 .header__title-wrapper {
   text-align: right;
@@ -44,10 +49,11 @@ header {
   grid-row-start: 3; }
 
 .header__title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 2.75rem;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  opacity: .9; }
 
 .header__title--wild {
   padding-right: 1.25rem; }
@@ -57,7 +63,8 @@ header {
   margin: 0;
   padding: 0;
   padding-right: 1rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  opacity: .9; }
 
 .header__subtitle--by {
   margin-top: 1rem; }
@@ -69,26 +76,35 @@ header {
 
 .header__date-wrapper {
   text-align: right;
-  padding: 1rem 0 7rem 1.75rem; }
+  padding: 1rem 0 7rem; }
 
 .header__date {
   font-size: 1rem;
   line-height: 1rem;
   text-align: right;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  opacity: .9; }
 
 .header__date--month,
 .header__date--day {
   display: inline-block; }
 
-.header__coming-soon {
+.header__tickets {
   position: absolute;
   bottom: 1rem;
-  display: inline-block;
+  left: 0;
   width: 100%;
+  display: inline-block;
   text-align: center;
-  font-family: "Comfortaa", sans-serif; }
+  text-decoration: none;
+  font-family: "eveleth_dotregular", sans-serif;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  transition: .2s color; }
+
+.header__tickets:hover {
+  color: #FFD16A; }
 
 /****************
      ARTISTS
@@ -96,6 +112,9 @@ header {
 .artists {
   text-align: center;
   margin: 2rem auto 4rem; }
+
+.artists__wrapper {
+  cursor: pointer; }
 
 .artists__title {
   font-size: 1.5rem;
@@ -132,7 +151,8 @@ header {
      Press
 ****************/
 .press {
-  text-align: center; }
+  text-align: center;
+  display: none; }
 
 .press__title {
   font-size: 1.25rem;
@@ -154,7 +174,8 @@ header {
 ****************/
 .crew {
   text-align: center;
-  margin: 4rem auto 2rem; }
+  margin: 4rem auto 2rem;
+  display: none; }
 
 .crew__title {
   font-size: 1.25rem;
@@ -180,6 +201,7 @@ header {
      FOOTER
 ****************/
 .video-container {
+  display: none;
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
@@ -208,7 +230,7 @@ header {
   height: 2.5rem;
   text-align: center;
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto 0;
   background: #D37C41;
   color: #fff;
   transition: .2s;
@@ -245,6 +267,64 @@ header {
   color: #D37C41; }
 
 /****************
+     Popup
+****************/
+.popup {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFD16A;
+  padding: 0 1rem;
+  overflow-y: scroll;
+  transition: opacity .2s; }
+
+.popup__title-wrapper {
+  text-align: right;
+  width: 100%; }
+
+.popup__artist {
+  margin: 1rem 0;
+  font-size: 1.5rem; }
+
+.popup__role {
+  color: #D37C41;
+  margin: 0 0 1rem;
+  font-size: 1.25rem; }
+
+.popup__wrapper {
+  margin: 0 auto; }
+
+.popup__img-container {
+  width: 100%;
+  display: block;
+  margin-right: 1rem; }
+
+.popup__img {
+  width: 100%; }
+
+.popup__description {
+  max-width: 700px;
+  margin-top: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: .8rem; }
+
+.popup__x-button {
+  background: transparent;
+  border: none;
+  font-size: 3rem;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  transition: .2s color; }
+
+.popup__x-button:hover {
+  color: #fff; }
+
+/****************
      Desktop
 ****************/
 @media screen and (min-width: 720px) {
@@ -265,8 +345,8 @@ header {
     align-items: initial;
     justify-content: center;
     display: grid;
-    grid-template-columns: auto 16rem 26rem auto;
-    grid-template-rows: 50% 1.25rem 13.5rem 5rem;
+    grid-template-columns: auto 14rem 30.5rem auto;
+    grid-template-rows: 50% 1.5rem 13.5rem 9rem auto;
     align-content: end;
     position: relative;
     font-family: "eveleth_dotregular", sans-serif;
@@ -279,7 +359,7 @@ header {
     grid-row-start: 2;
     margin: 0;
     padding: 0;
-    padding-left: .5rem; }
+    padding-left: .25rem; }
 
   .header__title-wrapper {
     text-align: right;
@@ -288,7 +368,7 @@ header {
 
   .header__title {
     font-size: 5rem;
-    line-height: 4rem;
+    line-height: 5rem;
     margin: 0;
     padding: 0; }
 
@@ -300,10 +380,7 @@ header {
     margin: 0;
     padding: 0;
     padding-right: 1.5rem;
-    line-height: 2.25rem; }
-
-  .header__subtitle--by {
-    margin-top: .5rem; }
+    line-height: 3rem; }
 
   .header__subtitle--small {
     font-size: 1.5rem;
@@ -313,29 +390,32 @@ header {
   .header__date-wrapper {
     grid-column-start: 2;
     grid-row-start: 3;
-    padding-top: 2px; }
+    padding-top: 5px; }
 
   .header__date {
     font-size: 1rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     text-align: right;
     margin: 0;
     padding: 0; }
 
-  .header__coming-soon {
+  .header__tickets {
     position: absolute;
     bottom: 1rem;
+    left: calc(50% - 116px);
     display: inline-block;
-    width: 100%;
+    width: initial;
     text-align: center;
-    font-family: "Comfortaa", sans-serif; }
+    font-family: "eveleth_dotregular", sans-serif;
+    font-size: 2rem; }
 
   /****************
        ARTISTS
   ****************/
   .artists {
     text-align: center;
-    margin: 2rem auto 4rem; }
+    margin: 2rem auto 4rem;
+    width: 41rem; }
 
   .artists__title {
     font-size: 2rem;
@@ -358,7 +438,6 @@ header {
   .crew__dots,
   .digital__dots {
     display: inline;
-    font-family: "Chivo", sans-serif;
     font-size: 1rem;
     letter-spacing: .25rem; }
 
@@ -429,13 +508,13 @@ header {
     height: 5rem;
     text-align: center;
     display: block;
-    margin: 0 auto;
+    margin: 4rem auto 0;
     background: #D37C41;
     color: #fff;
     transition: .2s;
     text-decoration: none;
-    font-size: 1.25rem;
-    line-height: 5rem; }
+    font-size: 1.5rem;
+    line-height: 5.5rem; }
 
   .donate:hover {
     background: #fff;
@@ -455,6 +534,81 @@ header {
     display: inline-block;
     padding: 0;
     margin: 0;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  /****************
+       Popup
+  ****************/
+  .popup {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    min-width: 700px;
+    height: 90%;
+    min-height: 580px;
+    background: #FFD16A;
+    border: solid #000 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: initial; }
+
+  .popup__title-wrapper {
+    text-align: right;
+    width: 100%; }
+
+  .popup__artist {
+    margin: 1rem 0;
+    font-size: 2rem; }
+
+  .popup__role {
+    color: #D37C41;
+    margin: 0 0 1rem;
+    font-size: 1.5rem; }
+
+  .popup__wrapper {
+    width: 700px;
+    margin: 0 auto; }
+
+  .popup__img-container {
+    max-width: 300px;
+    display: inline-block;
+    float: left;
+    margin-right: 1rem; }
+
+  .popup__img {
+    width: 100%; }
+
+  .popup__description {
+    max-width: 700px;
+    margin-top: 0;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: .8rem; }
+
+  .popup__x-button {
+    background: transparent;
+    border: none;
+    font-size: 3rem;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    transition: .2s color; }
+
+  .popup__x-button:hover {
+    color: #fff; } }
+.hidden {
+  visibility: hidden; }
+
+.invisible {
+  opacity: 0; }
+
+.fixed {
+  overflow: hidden; }
+
+.removed {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
