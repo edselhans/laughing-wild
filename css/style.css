@@ -32,7 +32,9 @@ header {
   position: relative;
   font-family: "eveleth_dotregular", sans-serif;
   color: rgba(255, 255, 255, 0.9);
-  background: url(../img/header-img.jpg) 50% 50% no-repeat; }
+  background: url(../img/header-img.jpg) 50% 30% no-repeat;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .header__surtitle {
   font-size: 1.25rem;
@@ -201,7 +203,6 @@ header {
      FOOTER
 ****************/
 .video-container {
-  display: none;
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
@@ -309,8 +310,9 @@ header {
   max-width: 700px;
   margin-top: 1rem;
   text-align: justify;
-  text-justify: inter-word;
-  font-size: .8rem; }
+  text-justify: auto;
+  font-size: 1rem;
+  line-height: 1.25rem; }
 
 .popup__x-button {
   background: transparent;
@@ -345,13 +347,13 @@ header {
     align-items: initial;
     justify-content: center;
     display: grid;
-    grid-template-columns: auto 14rem 30.5rem auto;
+    grid-template-columns: auto 13rem 30.5rem auto;
     grid-template-rows: 50% 1.5rem 13.5rem 9rem auto;
     align-content: end;
     position: relative;
     font-family: "eveleth_dotregular", sans-serif;
     color: rgba(255, 255, 255, 0.9);
-    background: url(../img/header-img.jpg) 50% 50% no-repeat; }
+    background: url(../img/header-img.jpg) 50% 31% no-repeat; }
 
   .header__surtitle {
     font-size: 1.25rem;
@@ -539,14 +541,26 @@ header {
   /****************
        Popup
   ****************/
-  .popup {
+  .popup-container {
     position: fixed;
-    top: 5%;
-    left: 5%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .popup {
+    position: relative;
     width: 90%;
-    min-width: 700px;
+    min-width: 740px;
+    max-width: 1000px;
     height: 90%;
-    min-height: 580px;
+    min-height: 660px;
+    max-height: 800px;
     background: #FFD16A;
     border: solid #000 2px;
     display: flex;
