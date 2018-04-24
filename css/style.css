@@ -318,7 +318,7 @@ header {
   background: transparent;
   border: none;
   font-size: 3rem;
-  margin: 0 auto;
+  margin: 2rem auto;
   display: block;
   cursor: pointer;
   transition: .2s color; }
