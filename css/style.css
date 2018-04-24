@@ -1,8 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
 /****************
-    VARIABLES
-****************/
-/****************
       MAIN
 ****************/
 html,
@@ -270,6 +267,9 @@ header {
 /****************
      Popup
 ****************/
+.popup-container {
+  transition: opacity .2s; }
+
 .popup {
   box-sizing: border-box;
   position: fixed;
@@ -279,8 +279,7 @@ header {
   height: 100%;
   background: #FFD16A;
   padding: 0 1rem;
-  overflow-y: scroll;
-  transition: opacity .2s; }
+  overflow-y: scroll; }
 
 .popup__title-wrapper {
   text-align: right;
@@ -624,5 +623,3 @@ header {
 
 .removed {
   display: none; }
-
-/*# sourceMappingURL=style.css.map */
