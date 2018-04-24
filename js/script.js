@@ -1,24 +1,3 @@
-// Opera 8.0+
-var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-
-// Firefox 1.0+
-var isFirefox = typeof InstallTrigger !== 'undefined';
-
-// Safari 3.0+ "[object HTMLElementConstructor]" 
-var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
-
-// Internet Explorer 6-11
-var isIE = /*@cc_on!@*/false || !!document.documentMode;
-
-// Edge 20+
-var isEdge = !isIE && !!window.StyleMedia;
-
-// Chrome 1+
-var isChrome = !!window.chrome && !!window.chrome.webstore;
-
-// Blink engine detection
-var isBlink = (isChrome || isOpera) && !!window.CSS;
-
 let artistInfo = {
   durang: {
     name: "Christopher Durang",
@@ -30,7 +9,7 @@ let artistInfo = {
     name: "Lovell Holder",
     role: "Director",
     headshot: "img/headshot-lovell.jpg",
-    description: "Lovell Holder graduated summa cum laude and Phi Beta Kappa from Princeton University. He then went on to receive his MFA in Acting from Brown University/Trinity Repertory Company. Upon moving to Los Angeles, Holder first worked as a development assistant for writer/producer Stacy Rukeyser (the Emmy-nominated UnREAL) and producer Clark Peterson (the Oscar-winning Monster, Rampart). Not long after, he began writing his own work, and his first play, Juliet in Pasadena, was shortlisted as a semi-finalist for the National Playwrights Conference at the Eugene O’Neill TheaterCenter. Holder served as the lead producer of Some Freaks, the debut feature film of Ian MacAllister-McDonald (a Sundance Lab Finalist), which stars Thomas Mann (Me and Earl and the Dying Girl), Lily Mae Harrington, and Tony Award nominee Marin Ireland (Sneaky Pete). Executive produced by Neil LaBute, the outsider romance has won over a dozen festival awards, and the Hollywood Reporter named it “one of the strongest films of its kind in ages.” Soon after completing production on Some Freaks, Holder directed his first feature film, Loserville, which he also co-wrote and produced alongside Grey’s Anatomy star and Tony Award winner Sara Ramirez. The ensemble comedy features Darby Stanchfield (Scandal), Matt McGorry (How to Get Away with Murder), Jamie-Lynn Sigler (The Sopranos), and Jonathan Lipnicki (Jerry Maguire). Most recently, Holder teamed up with Oscar-winning director Damien Chazelle to produce the dark comedy Surrogate, a short film by Olivia Hamilton."
+    description: "Lovell Holder graduated summa cum laude and Phi Beta Kappa from Princeton University. He then went on to receive his MFA in Acting from Brown University/Trinity Repertory Company. Upon moving to Los Angeles, Holder first worked as a development assistant for writer/producer Stacy Rukeyser (the Emmy-nominated UnREAL) and producer Clark Peterson (the Oscar-winning Monster, Rampart). Not long after, he began writing his own work, and his first play, Juliet in Pasadena, was shortlisted as a semi-finalist for the National Playwrights Conference at the Eugene O’Neill Theater Center. Holder served as the lead producer of Some Freaks, the debut feature film of Ian MacAllister-McDonald (a Sundance Lab Finalist), which stars Thomas Mann (Me and Earl and the Dying Girl), Lily Mae Harrington, and Tony Award nominee Marin Ireland (Sneaky Pete). Executive produced by Neil LaBute, the outsider romance has won over a dozen festival awards, and the Hollywood Reporter named it “one of the strongest films of its kind in ages.” Soon after completing production on Some Freaks, Holder directed his first feature film, Loserville, which he also co-wrote and produced alongside Grey’s Anatomy star and Tony Award winner Sara Ramirez. The ensemble comedy features Darby Stanchfield (Scandal), Matt McGorry (How to Get Away with Murder), Jamie-Lynn Sigler (The Sopranos), and Jonathan Lipnicki (Jerry Maguire). Most recently, Holder teamed up with Oscar-winning director Damien Chazelle to produce the dark comedy Surrogate, a short film by Olivia Hamilton."
   },
   adam: {
     name: "Adam Ziv",
