@@ -108,9 +108,15 @@ header {
 /****************
      ARTISTS
 ****************/
+.show-info {
+  font-size: 1rem;
+  width: 88%;
+  margin: 2rem auto 4rem;
+  text-align: justify; }
+
 .artists {
   text-align: center;
-  margin: 2rem auto 4rem; }
+  margin: 0 auto 4rem; }
 
 .artists__wrapper {
   cursor: pointer; }
@@ -169,12 +175,11 @@ header {
   color: #fff; }
 
 /****************
-     ARTISTS
+      CREW
 ****************/
 .crew {
   text-align: center;
-  margin: 4rem auto 2rem;
-  display: none; }
+  margin: 4rem auto 2rem; }
 
 .crew__title {
   font-size: 1.25rem;
@@ -205,7 +210,7 @@ header {
   padding-top: 30px;
   height: 0;
   overflow: hidden;
-  margin: 2rem auto;
+  margin: 0 auto;
   width: 90%; }
 
 .video-container iframe, .video-container object, .video-container embed {
@@ -228,7 +233,7 @@ header {
   height: 2.5rem;
   text-align: center;
   display: block;
-  margin: 2rem auto 0;
+  margin: 2rem auto 2rem;
   background: #D37C41;
   color: #fff;
   transition: .2s;
@@ -413,6 +418,9 @@ header {
   /****************
        ARTISTS
   ****************/
+  .show-info {
+    width: 41rem; }
+
   .artists {
     text-align: center;
     margin: 2rem auto 4rem;
@@ -501,7 +509,7 @@ header {
 
   .video {
     display: block;
-    margin: 2rem auto; }
+    margin: 4rem auto; }
 
   .donate {
     width: 25rem;
@@ -509,7 +517,7 @@ header {
     height: 5rem;
     text-align: center;
     display: block;
-    margin: 4rem auto 0;
+    margin: 2rem auto 0;
     background: #D37C41;
     color: #fff;
     transition: .2s;
@@ -523,7 +531,7 @@ header {
 
   .digital {
     text-align: center;
-    margin: 4rem auto 2rem; }
+    margin: 0 auto 2rem; }
 
   .digital__title {
     font-size: 1.25rem;
