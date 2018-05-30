@@ -518,6 +518,9 @@ header {
     display: block;
     margin: 4rem auto; }
 
+  .donation-title {
+    font-size: 1.25rem; } 
+     
   .donate {
     width: 25rem;
     max-width: 25rem;
