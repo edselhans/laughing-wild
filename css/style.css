@@ -116,7 +116,7 @@ header {
 
 .artists {
   text-align: center;
-  margin: 0 auto 4rem; }
+  margin: 0 auto 2rem; }
 
 .artists__wrapper {
   cursor: pointer; }
@@ -430,7 +430,7 @@ header {
 
   .artists {
     text-align: center;
-    margin: 2rem auto 4rem;
+    margin: 2rem auto 2rem;
     width: 41rem; }
 
   .artists__title {
